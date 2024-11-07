@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}Login | SavePass{% endblock title %}Login | SavePass
+{% block body %}
+   <pre>
+        <h1> 
+        <b>REGISTRATION FORM</b>
+        </h1>   
+    </pre>
+    <pre>
+        <h1>
+            Welcome back {% for name in name %}
+            {{name}}
+            {% endfor %}
+            <h3>
+                Please Enter Your Account Details 
+            </h3>
+        </h1>
+    </pre>
+<pre>
+    <form action="login" method="post">
+        {% csrf_token %}
+                    <input name="name" type="text" placeholder=" write your name">
+
+                     <input name="mail" type="text" placeholder="enter your email">
+
+                     <input name="password" type="password" placeholder="enter password">
+
+                     <input type="submit" value="sign up"> 
+    </form>
+
+</pre>
+{% endblock body %}
