@@ -69,7 +69,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'SavePass.wsgi.app'
+WSGI_APPLICATION = 'SavePass.wsgi.application'
 
 
 # Database

@@ -21,7 +21,7 @@
       },
       {
         "src": "/(.*)",
-        "dest": "savepass/wsgi.py"
+        "dest": "SavePass/wsgi.py"
       }
     ]
   }
