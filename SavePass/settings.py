@@ -32,6 +32,7 @@ ALLOWED_HOSTS = ['.vercel.app', '.now.sh', '127.0.0.1', 'localhost']
 # Application definition
 
 INSTALLED_APPS = [
+    'Main',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -68,7 +69,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'SavePass.wsgi.application'
+WSGI_APPLICATION = 'SavePass.wsgi.app'
 
 
 # Database
